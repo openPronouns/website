@@ -1,0 +1,22 @@
+body {
+    font-family: 'Ubuntu';
+}
+
+.hero {
+    background-color: #7ab5ec;
+    padding: 1em;
+    text-align: center;
+    color: #333;
+    height: 100vh;
+}
+
+.hero img {
+    width: 65vw;
+    opacity: 50%;
+}
+
+.hero h1 {
+    font-size: 8em;
+    color: white;
+    opacity: 90%;
+}
