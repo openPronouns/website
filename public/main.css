@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 :root {
-    --accent-color-light: #00b6e4;
+    --accent-color-light: #009ec5;
     --accent-color-dark: #01a1c9;
     --secondary-color: #0084a5;
-    background-color: #cacaca;
+    --background-colour: #dadada;
+    --background-colour-dark: #555555;
+    background-color: #b9b9b9;
 }
 
 nav {
     margin: 0 auto;
     position: -webkit-sticky;
     position: sticky;
-    background-color: white;
+    background-color: var(--background-colour);
     width: 98vw;
     top: 0 !important;
     left: 0 !important;
@@ -35,7 +37,7 @@ nav a:hover {
 footer {
     margin: 0 auto;
     position: static;
-    background-color: white;
+    background-color: var(--background-colour);
     width: 98vw;
     bottom: 0 !important;
     left: 0 !important;
@@ -44,12 +46,12 @@ footer {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-footer a {
+a {
     color: var(--accent-color-light);
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     color: var(--secondary-color);
 }
 
@@ -63,15 +65,38 @@ body {
     margin: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    padding: 1rem;
+    width: 90vw;
+    border-radius: 1rem;
+    background-color: var(--background-colour);
+}
+
+.card {
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 0.5rem;
+    border-color: var(--accent-color-light);
+    padding-left: 1rem;
+}
+
+.card-data {
+    list-style: none;
+}
+
+.card-data-item {
+    display: inline;
+}
+
+.card-links {
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
 }
 
 .hero {
     background-color: var(--accent-color-light);
-    padding: 1rem;
     text-align: center;
-    height: 90vh;
-    width: 90vw;
-    border-radius: 1rem;
 }
 
 .hero img {
@@ -88,10 +113,11 @@ body {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #333;
+        color: #cccccc;
     }
 
     nav {
-        background-color: #555555;
+        background-color: var(--background-colour-dark);
     }
 
     nav a {
@@ -99,8 +125,12 @@ body {
     }
 
     footer {
-        background-color: #555555;
+        background-color: var(--background-colour-dark);
         color: white;
+    }
+
+    .container {
+        background-color: var(--background-colour-dark);
     }
 
     .hero {
