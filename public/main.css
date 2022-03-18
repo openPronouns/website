@@ -1,13 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --accent-color-light: #00b6e4;
+    --accent-color-dark: #01a1c9;
+    --secondary-color: #0084a5;
+    background-color: #cacaca;
+}
+
+nav {
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    width: 98vw;
+    top: 0 !important;
+    left: 0 !important;
+    padding-left: 0 !important;
+    padding: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+nav a {
+    color: var(--accent-color-light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    margin: 0 auto;
+    position: static;
+    background-color: white;
+    width: 98vw;
+    bottom: 0 !important;
+    left: 0 !important;
+    padding-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+footer a {
+    color: var(--accent-color-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
 body {
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero {
-    background-color: #7ab5ec;
-    padding: 1em;
+    background-color: var(--accent-color-light);
+    padding: 1rem;
     text-align: center;
-    color: #333;
-    height: 100vh;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 1rem;
 }
 
 .hero img {
@@ -19,4 +83,38 @@ body {
     font-size: 8em;
     color: white;
     opacity: 90%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+    }
+
+    nav {
+        background-color: #555555;
+    }
+
+    nav a {
+        color: var(--accent-color-dark);
+    }
+
+    footer {
+        background-color: #555555;
+        color: white;
+    }
+
+    .hero {
+        background-color: var(--accent-color-dark);
+        color: #333;
+    }
+
+    .hero h1 {
+        color: #333;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 3.5em;
+    }
 }

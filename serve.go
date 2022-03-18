@@ -1,8 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
 
 	"github.com/gorilla/mux"
 )
@@ -18,5 +23,19 @@ func main() {
 	
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir("public/"))).Methods("GET")
 
+	// Create a channel to listen for OS interrupts
+	var stop = make(chan os.Signal)
+	signal.Notify(stop, syscall.SIGINT, syscall.SIGTERM)
+
+	// go creates a new goroutine, a parallel process. This allows the program to constantly check for an interrupt in the background.
+	go func() {
+		<-stop
+		fmt.Println("\nStopping...")
+		// Ensures that everything has time to finish
+		time.Sleep(2*time.Second)
+		os.Exit(0)
+	}()
+
+	fmt.Println("Listening on port 8080...")
 	http.ListenAndServe(":8080", r)
 }
