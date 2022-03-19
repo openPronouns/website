@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"html/template"
 	"net/http"
@@ -12,8 +13,19 @@ import (
 	"github.com/gorilla/mux"
 )
 
+var (
+	port string
+)
+
+func initFlags() {
+	flag.StringVar(&port, "p", "3030", "port to listen on")
+	flag.Parse()
+}
+
 func main() {
 	r := mux.NewRouter()
+
+	initFlags()
 
 	indexTmpl := template.Must(template.ParseFiles("public/index.html"))
 
@@ -36,6 +48,6 @@ func main() {
 		os.Exit(0)
 	}()
 
-	fmt.Println("Listening on port 3030...")
-	http.ListenAndServe(":3030", r)
+	fmt.Printf("Listening on port %v...\n", port)
+	http.ListenAndServe(":" + port, r)
 }
