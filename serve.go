@@ -36,6 +36,6 @@ func main() {
 		os.Exit(0)
 	}()
 
-	fmt.Println("Listening on port 8080...")
-	http.ListenAndServe(":8080", r)
+	fmt.Println("Listening on port 3030...")
+	http.ListenAndServe(":3030", r)
 }
