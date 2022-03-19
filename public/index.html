@@ -9,7 +9,13 @@
     <link rel="shortcut icon" href="oPronouns-logo.svg" type="image/svg">
 </head>
 <body>
-    <nav><a href="/">openPronouns</a></nav>
+    <nav>
+        <a href="/"><img src="/oPronouns-logo.svg" class="nav-img"> openPronouns</a>
+        <ul class="nav-list">
+            <li class="nav-list"><a href="/#about">About</a></li>
+            <li class="nav-list"><a href="/#projects">Projects</a></li>
+        </ul>
+    </nav>
     <div class="container hero">
         <img src="/pronouns-en.png" alt="hero image">
         <h1>openPronouns</h1>
@@ -22,9 +28,25 @@
             It sets out a standard for an API for services to talk to each other to display pronouns for a user.
         </p>
         <p>
+            The idea is to have a system thas is as decentralised as possible, similar to the 
+            <a href="http://" target="_blank" rel="noopener noreferrer">Matrix project</a>. This means that anyone could spin up a 'homeserver' to host a compatible API.
+            This API could be as simple as containing one user, or as complex as containing a whole network of users.
+        </p>
+        <p>
+            Once a very basic specification has been made, we hope to split the project into three parts:
+            <ul>
+                <li>The Client</li>
+                <li>The Homeserver</li>
+                <li>The Identity server</li>
+            </ul>
+            These parts will kind of need to be built in parallel, progress has already started on a homeserver implementation before a specification has been started. It will be the homeserver's responsibility to store user information and information about pronouns or other basic information.
+            The client will be responsible for displaying the information to the user. This could be through a variety of methods, such as a WebUI, a bot that adds roles to a user (in a service like Discord or Revolt), or in a service that chooses to integrate natively.
+            Finally, there is the Identity server, this will store a list of users (identified by their federated username) and hashed information of their social information to allow for a fallback in case the homeserver doesn't have federation set up correctly.
+        </p>
+        <p>
             Currently, the standard is in its infancy and is a work in progress. 
-            Please feel free to join the conversation on <a href="https://matrix.to/#/#oPronouns-g:matrix.org">Matrix</a>
-             or <a href="https://gitter.im/openPronouns/">Gitter</a>.
+            Please feel free to join the conversation on <a href="https://matrix.to/#/#oPronouns-g:matrix.org" target="_blank" rel="noopener noreferrer">Matrix</a>
+             or <a href="https://gitter.im/openPronouns/" target="_blank" rel="noopener noreferrer">Gitter</a>.
         </p>
     </div>
 
@@ -45,15 +67,15 @@
                 Odin is the codename for the openPronouns homeserver built by Ludoviko in Node.JS
             </p>
             <ul class="card-links">
-                <li><a href="https://github.com/openPronouns/Odin">GitHub Project</a></li>
+                <li><a href="https://github.com/openPronouns/Odin" target="_blank" rel="noopener noreferrer">GitHub Project</a></li>
             </ul>
         </div>
         <p>
-            Working on a project and want to get it listed? Contact me on <a href="https://matrix.to/#/@ludoviko_:matrix.org">Matrix</a>
-             or by <a href="mailto:hello@opronouns.net">Email</a>
+            Working on a project and want to get it listed? Contact me on <a href="https://matrix.to/#/@ludoviko_:matrix.org" target="_blank" rel="noopener noreferrer">Matrix</a>
+             or by <a href="mailto:hi@opronouns.net">Email</a>
         </p>
     </div>
 
-    <footer>&#xA9; 2022 <a href="https://ludoviko.ch">Ludoviko</a>, GPL v3</footer>
+    <footer>&#xA9; 2022 <a href="https://ludoviko.ch">Ludoviko</a>, GPL v3  |  Something wrong? Correct it <a href="https://github.com/openPronouns/website" target="_blank" rel="noopener noreferrer">here</a> || Hosted on <a href="https://ipfs.io" target="_blank" rel="noopener noreferrer">IPFS</a></footer>
 </body>
 </html>
