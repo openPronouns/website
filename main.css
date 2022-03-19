@@ -4,6 +4,7 @@
     --accent-color-light: #009ec5;
     --accent-color-dark: #01a1c9;
     --secondary-color: #0084a5;
+    --active-color: #5992a0;
     --background-colour: #dadada;
     --background-colour-dark: #555555;
     background-color: #b9b9b9;
@@ -117,6 +118,17 @@ body {
     color: white;
     opacity: 90%;
 }
+    
+.nav-img {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.active {
+    text-decoration: underline;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -167,12 +179,6 @@ body {
     .hero h1 {
         font-size: 3.5em;
     }
-    
-    .nav-img {
-        width: 1.5rem !important;
-        height: 1.5rem !important;
-        margin-left: 1rem;
-    }
 
     li .nav-list {
         display: inline-block;
@@ -182,11 +188,5 @@ body {
 @media screen and (min-width: 601px) {
     .menu {
         display: none;
-    }
-
-    .nav-img {
-        width: 1.5rem !important;
-        height: 1.5rem !important;
-        margin-left: 1rem;
     }
 }
