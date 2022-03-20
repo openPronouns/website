@@ -6,3 +6,19 @@
 .s-nav-list a {
     font-size: 1rem;
 }
+
+.s-nav-list li {
+    display: inline;
+}
+
+p {
+    padding: 0 2rem;
+}
+
+h1 {
+    padding: 0 0;
+}
+
+h2 {
+    padding: 1rem 1rem 0;
+}

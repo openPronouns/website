@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openPronouns | IPFS</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/wiki.css">
+    <link rel="shortcut icon" href="/oPronouns-logo.svg" type="image/svg">
+    <meta property="og:title" content="openPronouns | IPFS">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/oPronouns-logo.png">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:description" content="A page describing IPFS and how the openPronouns project could use it.">
+    <meta property="description" content="A page describing IPFS and how the openPronouns project could use it.">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@Ludoviko_">
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="/oPronouns-logo.svg" class="nav-img">openPronouns</a>
+        <ul class="nav-list">
+            <li class="nav-list"><a href="/wiki" class="active">Wiki</a></li>
+        </ul>
+
+        <ul class="s-nav-list">
+            <li><a href="/wiki" class="s-nav-list">Wiki home</a></li>
+            <li><a href="/wiki/ipfs/" class="s-nav-list active">IPFS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>IPFS</h1>
+        <h2>What is IPFS?</h2>
+        <p>
+            IPFS, or the InterPlanetary File System, is a protocol and peer-to-peer network that allows you to store and share files on the internet using a distributed file system.
+            It cuts every file into chunks, and then hashes them to distribute them across the network.
+        </p>
+        <h2>How do I use IPFS?</h2>
+        <p>
+            To be able to access the IPFS network, you need to have a node running on your computer as well as the <a href="https://docs.ipfs.io/install/ipfs-companion/" target="_blank" rel="noopener noreferrer">browser companion</a>. Some browsers, like <a href="https://bave.com">Brave</a>,
+            already have native integration without needing to install anything extra.
+
+            Obviously, this is only for accessing websites on IPFS, to find out more about how to use IPFS, check out the <a href="https://ipfs.io">IPFS website</a>.
+        </p>
+        <h2>But what are the downfalls?</h2>
+        <p>
+            Due to it's distributed nature, IPFS is not suitable for storing files that contain personal data or sensitive information. When using gateways, it can take a while for the website or file to be loaded.
+        </p>
+        <h2>How is openPronouns already using IPFS?</h2>
+        <p>
+            The website itself is available on IPFS, if you have the browser companion installed
+            then it should have already redirected you and you should be able to see <code>ipns://opronouns.net</code> in your address bar instead of <code>https://opronouns.net</code>.
+            You could also go to <code>https://ipfs.io/ipns/opronouns.net</code> to see the website but this is using a gateway and could take a while to load.
+        </p>
+        <h2>How could the project use IPFS in the future?</h2>
+        <p>
+            Honestly, there's quite a few things that could be done with IPFS.
+            I'm hoping to use it to serve static files for the website so that we don't have to rely on a single CDN.
+            However, this means that we'd have to use a gateway in the beginning, which is not ideal.
+            Looking further into the future, we could run an IPFS node using a service worker if accessed through HTTPS.
+            This means that the more people with the website open, the more redundancy we have.
+            The issue is that we'd need to get consent first from the user especially when taking metered connections into account.
+        </p>
+        <p>
+            Using an IPFS service worker will be fine, if the front-end uses NPM or similar for JS package management.
+            The <a href="https://js.ipfs.io/" target="_blank" rel="noopener noreferrer">JS IPFS</a> project already have an example of this working on their website.
+            This package is still in alpha at the moment though so it'll most likely be unstable.
+            Obviously, at the time of writing, we are nowhere near the point where we can use this.
+            I havent even started building a front-end yet, we have a very limited homeserver and that is it.
+        </p>
+        <div class="edited">
+            <p>This page was last updated on 2022-03-20 by Ludoviko</p>
+        </div>
+    </div>
+
+    <footer>&#xA9; 2022 <a href="https://ludoviko.ch">Ludoviko</a>, GPL v3  |  Something wrong? Correct it <a href="https://github.com/openPronouns/website" target="_blank" rel="noopener noreferrer">here</a> || Partially hosted on <a href="/wiki/ipfs" target="_blank">IPFS</a></footer>
+</body>
+</html>
