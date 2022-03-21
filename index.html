@@ -19,18 +19,10 @@
     <meta property="twitter:site" content="@Ludoviko_">
     <script src="/js/vavilon.min.js"></script>
     <script src="/js/lang-utils.js"></script>
+    <script src="/js/static-helpers.js"></script>
 </head>
-<body>
-    <nav>
-        <a href="/" class="active"><img src="/oPronouns-logo.svg" class="nav-img">openPronouns</a>
-        <ul class="nav-list">
-            <li class="nav-list"><a href="/wiki" class="vavilon" data-vavilon="wiki-title">Wiki</a></li>
-        </ul>
-        <div class="lang">
-            <button id="en-selector" onclick="activateLang('en')" title="English">EN</button>
-            <button id="eo-selector" onclick="activateLang('eo')" title="Esperanto">EO</button>
-        </div>
-    </nav>
+<body id="home">
+    <nav id="nav"></nav>
     <div class="container hero">
         <img src="/pronouns-en.png" alt="hero image">
         <h1>openPronouns</h1>
@@ -94,6 +86,6 @@
         </p>
     </div>
 
-    <footer>&#xA9; 2022 <a href="https://ludoviko.ch">Ludoviko</a>, GPL v3  |  <span class="vavilon" data-vavilon="footer-correct">Something wrong? Correct it</span> <a href="https://github.com/openPronouns/website" target="_blank" rel="noopener noreferrer" class="vavilon" data-vavilon="footer-here">here</a> || <span class="vavilon" data-vavilon="footer-host">Partially hosted on</span> <a href="/wiki/ipfs">IPFS</a></footer>
+    <footer id="footer"></footer>
 </body>
 </html>
