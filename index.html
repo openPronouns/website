@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="application/json" src="/locale/en.json" data-vavilon-dict="en"></script>
+    <script type="application/json" src="/locale/eo.json" data-vavilon-dict="eo"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +17,19 @@
     <meta property="description" content="The website for the openPronouns project. openPronouns is a protocol/standard for displaying pronouns.">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@Ludoviko_">
-    <script src="/js/localise.js"></script>
+    <script src="/js/vavilon.min.js"></script>
+    <script src="/js/lang-utils.js"></script>
 </head>
 <body>
     <nav>
         <a href="/" class="active"><img src="/oPronouns-logo.svg" class="nav-img">openPronouns</a>
         <ul class="nav-list">
-            <li class="nav-list"><a href="/wiki">Wiki</a></li>
+            <li class="nav-list"><a href="/wiki" class="vavilon" data-vavilon="wiki-title">Wiki</a></li>
         </ul>
+        <div class="lang">
+            <button id="en-selector" onclick="activateLang('en')" title="English">EN</button>
+            <button id="eo-selector" onclick="activateLang('eo')" title="Esperanto">EO</button>
+        </div>
     </nav>
     <div class="container hero">
         <img src="/pronouns-en.png" alt="hero image">
@@ -30,7 +37,7 @@
     </div>
 
     <div class="container" id="about">
-        <h1 data-i18n-key="about-title">About</h1>
+        <h1 data-vavilon="about-title" class="vavilon">About</h1>
         <p>
             openPronouns is more similar to a protocol or a standard than anything else. 
             It sets out a standard for an API for services to talk to each other to display pronouns for a user.
@@ -59,7 +66,7 @@
     </div>
 
     <div class="container" id="projects">
-        <h1 data-i18n-key="projects-title">Related Projects</h1>
+        <h1 class="vavilon" data-vavilon="projects-title">Related Projects</h1>
         <p>The following are projects that may or may not be maintained by the openPronouns team.</p>
         <div class="card">
             <h2>Odin</h2>
