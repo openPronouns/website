@@ -74,6 +74,14 @@ body {
     margin-right: 0.5rem;
 }
 
+.lang button {
+    cursor: pointer;
+}
+
+.lang button:disabled {
+    cursor: default;
+}
+
 .nav-list ul {
     float: inline-end;
 }

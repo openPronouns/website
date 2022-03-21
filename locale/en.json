@@ -1,5 +1,16 @@
 {
     "about-title": "About",
+    "wiki-title": "Wiki",
+    "about-p-0": "openPronouns is more similar to a protocol or a standard than anything else. It sets out a standard for an API for services to talk to each other to display pronouns for a user.",
+    "about-p-1-1": "The idea is to have a system thas is as decentralised as possible, similar to the ",
+    "about-p-1-2": "This means that anyone could spin up a 'homeserver' to host a compatible API. This API could be as simple as containing one user, or as complex as containing a whole network of users.",
+    "about-p-2": "Once a very basic specification has been made, we hope to split the project into three parts:",
+    "about-p-3": "These parts will kind of need to be built in parallel, progress has already started on a homeserver implementation before a specification has been started. It will be the homeserver's responsibility to store user information and information about pronouns or other basic information. The client will be responsible for displaying the information to the user. This could be through a variety of methods, such as a WebUI, a bot that adds roles to a user (in a service like Discord or Revolt), or in a service that chooses to integrate natively. Finally, there is the Identity server, this will store a list of users (identified by their federated username) and hashed information of their social information to allow for a fallback in case the homeserver doesn't have federation set up correctly.",
+    "about-p-4-0": "Currently, the standard is in its infancy and is a work in progress. Please feel free to join the conversation on ",
+    "about-p-4-1": "or",
+    "about-li-0": "The Client",
+    "about-li-1": "The Homeserver",
+    "about-li-2": "The Identity Server",
     "projects-title": "Related Projects",
-    "wiki-title": "Wiki"
+    "projects-p-0": "The following are projects that may or may not be maintained by the openPronouns team."
 }

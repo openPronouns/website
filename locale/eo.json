@@ -1,5 +1,16 @@
 {
-     "about-title": "Pri",
-     "projects-title": "Rilataj Projektoj",
-     "wiki-title": "Vikio"
+    "about-title": "Pri",
+    "wiki-title": "Vikio",
+    "about-p-0": "openPronouns estas pli simila al protokolo aŭ normo ol io alia. Ĝi starigas normon por API por servoj por paroli inter si por montri pronomojn por uzanto.",
+    "about-p-1-1": "La ideo estas havi sistemon kiel eble plej malcentralizitan, similan al la ",
+    "about-p-1-2": "Ĉi tio signifas, ke iu ajn povus krei 'hejmservilon' por gastigi kongruan API. Ĉi tiu API povus esti tiel simpla kiel enhavi unu uzanton, aŭ tiel kompleksa kiel enhavi tutan reton de uzantoj. ",
+    "about-p-2": "Post kiam tre baza specifo estas farita, ni esperas dividi la projekton en tri partojn:",
+    "about-p-3": "Ĉi tiuj partoj devos esti konstruitaj paralele, progreso jam komenciĝis pri hejmservila efektivigo antaŭ ol specifo estis komencita. Estos la respondeco de la hejmservisto konservi uzantajn informojn kaj informojn pri pronomoj. aŭ aliaj bazaj informoj. La kliento estos respondeca por montri la informojn al la uzanto. Ĉi tio povus esti per diversaj metodoj, kiel WebUI, roboto kiu aldonas rolojn al uzanto (en servo kiel Discord aŭ Revolt), aŭ en servo kiu elektas integri denaske.Fine, ekzistas la Identeca servilo, ĉi tio stokos liston de uzantoj (identigitaj per ilia federacia uzantnomo) kaj haŝan informon de siaj sociaj informoj por permesi falon en la okazo ke la hejma servilo faros ' ne havas federacion starigitan ĝuste.",
+    "about-p-4-0": "Nuntempe, la normo estas en sia infanaĝo kaj estas laboro en progreso. Bonvolu bonvolu aliĝi al la konversacio pri ",
+    "about-p-4-1": "aŭ",
+    "about-li-0": "La Kliento",
+    "about-li-1": "La Hejmservilo",
+    "about-li-2": "La Identeca Servilo",
+    "projects-title": "Rilataj Projektoj",
+    "projects-p-0": "La jenaj estas projektoj kiuj povas aŭ ne esti konservitaj de la openPronouns-teamo."
 }
