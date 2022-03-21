@@ -12,5 +12,16 @@
     "about-li-1": "La Hejmservilo",
     "about-li-2": "La Identeca Servilo",
     "projects-title": "Rilataj Projektoj",
-    "projects-p-0": "La jenaj estas projektoj kiuj povas aŭ ne esti konservitaj de la openPronouns-teamo."
+    "projects-p-0": "La jenaj estas projektoj, kiuj povas aŭ ne esti konservitaj de la teamo de openPronouns.",
+    "projects-maintainer": "Prizorganto:",
+    "projects-status": "Stato:",
+    "projects-status-odin-extra": "WIP, provizore ĉesigita",
+    "projects-desc-odin": "Odino estas la kodnomo por la hejmservilo openPronouns konstruita de Ludoviko en Node.JS",
+    "projects-git": "Projekto GitHub",
+    "projects-p-1-0": "Laboras pri projekto kaj volas listigi ĝin? Kontaktu min pri ",
+    "projects-p-1-1": "aŭ de",
+    "projects-a-0": "retpoŝto",
+    "footer-correct": "Io malĝusta? Korektu ĝin",
+    "footer-here": "ĉi tie",
+    "footer-host": "Parte gastigita je"
 }
