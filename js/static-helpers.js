@@ -9,8 +9,8 @@ function replaceNav() {
     const navBar = document.getElementById('nav');
     var opClass = '';
     var wikiClass = '';
-    if (document.body.id === 'home') opClass = 'active';
-    else if (document.body.id === 'wiki') wikiClass = `active`;
+    if (document.documentElement.dataset.navCategory === 'home') opClass = 'active';
+    else if (document.documentElement.dataset.navCategory === 'wiki') wikiClass = `active`;
 
     navBar.innerHTML = `
         <a href="/" class="${opClass}"><img src="/oPronouns-logo.svg" class="nav-img">openPronouns</a>
