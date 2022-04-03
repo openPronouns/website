@@ -17,29 +17,6 @@
     <meta property="description" content="The website for the openPronouns project. openPronouns is a protocol/standard for displaying pronouns.">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@Ludoviko_">
-    <script src="/js/wasm_exec.js"></script>
-    <script>
-        const go = new Go(); // Defined in wasm_exec.js
-    const WASM_URL = '/wasm/locale.wasm';
-
-    var wasm;
-
-    if ('instantiateStreaming' in WebAssembly) {
-	WebAssembly.instantiateStreaming(fetch(WASM_URL), go.importObject).then(function (obj) {
-		wasm = obj.instance;
-		go.run(wasm);
-	})
-    } else {
-	    fetch(WASM_URL).then(resp =>
-		    resp.arrayBuffer()
-	    ).then(bytes =>
-		    WebAssembly.instantiate(bytes, go.importObject).then(function (obj) {
-			    wasm = obj.instance;
-			    go.run(wasm);
-		    })
-	    )
-    }
-    </script>
 </head>
 <body>
     <nav id="nav"></nav>
