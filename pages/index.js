@@ -1,8 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import toTitleCase from '../lib/title_case';
+import {
+  useTranslation,
+  useLanguageQuery,
+  LanguageSwitcher,
+} from "next-export-i18n";
 
 export default function Home() {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
+  
   return (
     <>
     <div>
@@ -15,7 +24,7 @@ export default function Home() {
             <img src="/oPronouns-logo.svg" className="nav-img"/> 
         <Link href="/" className={"active"} passHref>openPronouns</Link>
         <ul className="nav-list">
-            <li className="nav-list"><a href="/wiki">Wiki</a></li>
+            <li className="nav-list"><Link href="/wiki">{toTitleCase(t("global.wiki"))}</Link></li>
         </ul>
       </nav>
 

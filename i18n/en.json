@@ -1,0 +1,14 @@
+{
+    "global": {
+        "wiki": "wiki",
+        "home": "home"
+    },
+    "index": {
+        "about": {
+            "title": "About"
+        },
+        "projects": {
+            "title": "Related Projects"
+        }
+    }
+}
