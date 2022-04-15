@@ -32,7 +32,24 @@
 			}
 		},
 		"projects": {
-			"title": "Rilataj Projektoj"
+			"title": "Rilataj Projektoj",
+			"p": {
+				"0": "La jenaj estas projektoj kiuj povas aŭ ne esti konservitaj de la openPronouns-teamo.",
+				"1": {
+					"0": "Laboras pri projekto kaj volas listigi ĝin? Kontaktu min ĉe ",
+					"1": "aŭ de"
+				}
+			},
+			"a": {
+				"0": "retpoŝto"
+			},
+			"status": "Stato:",
+			"odin": {
+				"title": "Odin",
+				"extra": "WIP, provizore ĉesigita",
+				"desc": "Odino estas la kodnomo por la hejmservilo openPronouns konstruita de Ludoviko en Node.JS",
+				"link": "Projekto GitHub"
+			}
 		}
 	}
 }

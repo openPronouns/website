@@ -60,7 +60,33 @@ export default function Home() {
 							<span>{t('index.about.p.4.1')}</span>{' '}
 							<Link passHref href={`https://gitter.im/openPronouns/`}>
 								Gitter
-							</Link>.
+							</Link>
+							.
+						</p>
+					</div>
+					<div className="container" id="projects">
+						<h1>{t('index.projects.title')}</h1>
+						<p>{t('index.projects.p.0')}</p>
+						<div className="card">
+							<h2>{t('index.projects.odin.title')}</h2>
+							<ul className="card-data">
+								<li className="card-data-item">{`${t('index.projects.status')} ${t('index.projects.odin.extra')}`}</li>
+							</ul>
+							<p>{t('index.projects.odin.desc')}</p>
+							<ul className="card-links">
+								<li>
+									<Link passHref href="https://github.com/openPronouns/Odin">
+										{t('index.projects.odin.link')}
+									</Link>
+								</li>
+							</ul>
+						</div>
+						<p>
+							<span>{t('index.projects.p.1.0')}</span>{' '}
+							<Link passHref href={`https://matrix.to/#/@ludoviko_:matrix.org`}>
+								Matrix
+							</Link>{' '}
+							<span>{t('index.projects.p.1.1')}</span> <Link href="mailto:hi@opronouns.net">{t('index.projects.a.0')}</Link>
 						</p>
 					</div>
 				</main>

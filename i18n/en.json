@@ -32,7 +32,24 @@
             }
         },
         "projects": {
-            "title": "Related Projects"
+            "title": "Related Projects",
+            "p": {
+                "0": "The following are projects that may or may not be maintained by the openPronouns team.",
+                "1": {
+                    "0": "Working on a project and want to get it listed? Contact me on ",
+                    "1": "or by"
+                }
+            },
+            "a": {
+                "0": "email"
+            },
+            "status": "Status:",
+            "odin": {
+                "title": "Odin",
+                "extra": "WIP, temporarily on hold",
+                "desc": "Odin is the codename for the openPronouns homeserver built by Ludoviko in Node.JS",
+                "link": "GitHub Project"
+            }
         }
     }
 }
