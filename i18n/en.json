@@ -1,11 +1,35 @@
 {
     "global": {
         "wiki": "wiki",
-        "home": "home"
+        "home": "home",
+        "logo": "openPronouns logo",
+        "footer": {
+            "correct": "Something wrong? Correct it",
+            "here": "here",
+            "host": "Partially hosted on"
+        }
     },
     "index": {
         "about": {
-            "title": "About"
+            "title": "About",
+            "p": {
+                "0": "openPronouns is more similar to a protocol or a standard than anything else. It sets out a standard for an API for services to talk to each other to display pronouns for a user.",
+                "1": {
+                    "0": "The idea is to have a system thas is as decentralised as possible, similar to the ",
+                    "1": "This means that anyone could spin up a 'homeserver' to host a compatible API. This API could be as simple as containing one user, or as complex as containing a whole network of users."
+                },
+                "2": "Once a very basic specification has been made, we hope to split the project into three parts:",
+                "3": "These parts will kind of need to be built in parallel, progress has already started on a homeserver implementation before a specification has been started. It will be the homeserver's responsibility to store user information and information about pronouns or other basic information. The client will be responsible for displaying the information to the user. This could be through a variety of methods, such as a WebUI, a bot that adds roles to a user (in a service like Discord or Revolt), or in a service that chooses to integrate natively. Finally, there is the Identity server, this will store a list of users (identified by their federated username) and hashed information of their social information to allow for a fallback in case the homeserver doesn't have federation set up correctly.",
+                "4": {
+                    "0": "Currently, the standard is in its infancy and is a work in progress. Please feel free to join the conversation on ",
+                    "1": "or"
+                }
+            },
+            "li": {
+                "0": "The client",
+                "1": "The homeserver",
+                "2": "The identity server"
+            }
         },
         "projects": {
             "title": "Related Projects"

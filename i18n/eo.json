@@ -1,6 +1,38 @@
 {
-    "global": {
-        "wiki": "vikio",
-        "home": ""
-    }
+	"global": {
+		"wiki": "vikio",
+		"home": "hejmo",
+		"logo": "emblemo de openPronouns",
+		"footer": {
+			"correct": "Io malĝusta? Korektu ĝin",
+			"here": "ĉi tie",
+			"host": "Parte gastigita je"
+		}
+	},
+	"index": {
+		"about": {
+			"title": "Pri",
+			"p": {
+				"0": "openPronouns estas pli simila al protokolo aŭ normo ol io alia. Ĝi fiksas normon por API por servoj por paroli inter si por montri pronomojn por uzanto.",
+				"1": {
+					"0": "La ideo estas havi sistemon kiel eble plej malcentralizitan, similan al la ",
+					"1": "Ĉi tio signifas, ke iu ajn povus krei 'hejmservilon' por gastigi kongruan API. Ĉi tiu API povus esti tiel simpla kiel enhavi unu uzanton, aŭ tiel kompleksa kiel enhavi tutan reton de uzantoj."
+				},
+				"2": "Post kiam tre baza specifo estas farita, ni esperas dividi la projekton en tri partojn:",
+				"3": "Ĉi tiuj partoj devos esti konstruitaj paralele, progreso jam komenciĝis pri hejmservila efektivigo antaŭ ol specifo estis komencita. Estos la respondeco de la hejmservisto konservi uzantajn informojn kaj informojn pri pronomoj aŭ aliaj bazaj informoj. . La kliento estos respondeca por montri la informojn al la uzanto. Ĉi tio povus esti per diversaj metodoj, kiel WebUI, bot, kiu aldonas rolojn al uzanto (en servo kiel Discord aŭ Revolt), aŭ en servo. kiu elektas integri denaske.Fine, ekzistas la Identeca servilo, ĉi tio stokos liston de uzantoj (identigitaj per ilia federacia uzantnomo) kaj haŝan informon de iliaj sociaj informoj por permesi rezerviton en la okazo ke la hejma servilo ne havas federacion agordita. supren ĝuste.",
+				"4": {
+					"0": "Nuntempe, la normo estas en sia infanaĝo kaj estas laboro en progreso. Bonvolu bonvolu aliĝi al la konversacio pri ",
+					"1": "aŭ"
+				}
+			},
+			"li": {
+				"0": "La kliento",
+				"1": "La hejmservilo",
+				"2": "La identeca servilo"
+			}
+		},
+		"projects": {
+			"title": "Rilataj Projektoj"
+		}
+	}
 }
