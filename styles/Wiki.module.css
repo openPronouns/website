@@ -10,14 +10,14 @@
     display: inline;
 }
 
-.g p {
-    padding: 0 2rem;
+.p {
+    padding: 0 2rem !important;
 }
 
-.g h1 {
-    padding: 0 0;
+.h1 {
+    padding: 0 0 !important;
 }
 
-.g h2 {
-    padding: 1rem 1rem 0;
+.h2 {
+    padding: 1rem 1rem 0 !important;
 }

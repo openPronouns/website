@@ -62,6 +62,45 @@
 				"date": "2022-04-15"
 			}
 		},
+		"ipfs": {
+			"title": "IPFS",
+			"sections": {
+				"0": {
+					"heading": "What is IPFS?",
+					"p0": "IPFS, or the InterPlanetary File System, is a protocol and peer-to-peer network that allows you to store and share files on the internet using a distributed file system. It cuts every file into chunks, and then hashes them to distribute them across the network."
+				},
+				"1": {
+					"heading": "How do I use IPFS?",
+					"p0": "To be able to access the IPFS network, you need to have a node running on your computer as well as the",
+					"a0": "browser companion",
+					"p1": "Some browsers, like",
+					"a1": "Brave",
+					"p2": "already have native integration without needing to install anything extra. Obviously, this is only for accessing websites on IPFS, to find out more about how to use IPFS, check out the",
+					"a2": "IPFS website"
+				},
+				"2": {
+					"heading": "But what are the downfalls?",
+					"p0": "Due to it's distributed nature, IPFS is not suitable for storing files that contain personal data or sensitive information. When using gateways, it can take a while for the website or file to be loaded."
+				},
+				"3": {
+					"heading": "How is openPronouns already using IPFS?",
+					"p0": "The website itself is available on IPFS, if you have the browser companion installed then it should have already redirected you and you should be able to see",
+					"p1": "in your address bar instead of",
+					"p2": "You could also go to",
+					"p3": "to see the website but this is using a gateway and could take a while to load."
+				},
+				"4": {
+					"heading": "How could the project use IPFS in the future?",
+					"p0": "Honestly, there's quite a few things that could be done with IPFS. I'm hoping to use it to serve static files for the website so that we don't have to rely on a single CDN. However, this means that we'd have to use a gateway in the beginning, which is not ideal. Looking further into the future, we could run an IPFS node using a service worker if accessed through HTTPS. This means that the more people with the website open, the more redundancy we have. The issue is that we'd need to get consent first from the user especially when taking metered connections into account.",
+					"p1": "Using an IPFS service worker will be fine, if the front-end uses NPM or similar for JS package management. The",
+					"p2": "project already have an example of this working on their website. This package is still in alpha at the moment though so it'll most likely be unstable. Obviously, at the time of writing, we are nowhere near the point where we can use this. I havent even started building a front-end yet, we have a very limited homeserver and that is it."
+				}
+			},
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-04-16"
+			}
+		},
 		"edited": {
 			"text": "This page was last updated on ",
 			"by": "by"
