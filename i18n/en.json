@@ -1,0 +1,109 @@
+{
+	"global": {
+		"wiki": "wiki",
+		"home": "home",
+		"logo": "openPronouns logo",
+		"footer": {
+			"correct": "Something wrong? Correct it",
+			"here": "here",
+			"host": "Partially hosted on"
+		}
+	},
+	"index": {
+		"about": {
+			"title": "About",
+			"p": {
+				"0": "openPronouns is more similar to a protocol or a standard than anything else. It sets out a standard for an API for services to talk to each other to display pronouns for a user.",
+				"1": {
+					"0": "The idea is to have a system thas is as decentralised as possible, similar to the ",
+					"1": "This means that anyone could spin up a 'homeserver' to host a compatible API. This API could be as simple as containing one user, or as complex as containing a whole network of users."
+				},
+				"2": "Once a very basic specification has been made, we hope to split the project into three parts:",
+				"3": "These parts will kind of need to be built in parallel, progress has already started on a homeserver implementation before a specification has been started. It will be the homeserver's responsibility to store user information and information about pronouns or other basic information. The client will be responsible for displaying the information to the user. This could be through a variety of methods, such as a WebUI, a bot that adds roles to a user (in a service like Discord or Revolt), or in a service that chooses to integrate natively. Finally, there is the Identity server, this will store a list of users (identified by their federated username) and hashed information of their social information to allow for a fallback in case the homeserver doesn't have federation set up correctly.",
+				"4": {
+					"0": "Currently, the standard is in its infancy and is a work in progress. Please feel free to join the conversation on ",
+					"1": "or"
+				}
+			},
+			"li": {
+				"0": "The client",
+				"1": "The homeserver",
+				"2": "The identity server"
+			}
+		},
+		"projects": {
+			"title": "Related Projects",
+			"p": {
+				"0": "The following are projects that may or may not be maintained by the openPronouns team.",
+				"1": {
+					"0": "Working on a project and want to get it listed? Contact me on ",
+					"1": "or by"
+				}
+			},
+			"a": {
+				"0": "email"
+			},
+			"status": "Status:",
+			"odin": {
+				"title": "Odin",
+				"extra": "WIP, temporarily on hold",
+				"desc": "Odin is the codename for the openPronouns homeserver built by Ludoviko in Node.JS",
+				"link": "GitHub Project"
+			}
+		}
+	},
+	"wiki": {
+		"index": {
+			"p": {
+				"0": "Soon this wiki will have content for the specification, unfortunately we aren't ready for that yet. Check back soon!"
+			},
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-04-15"
+			}
+		},
+		"ipfs": {
+			"title": "IPFS",
+			"sections": {
+				"0": {
+					"heading": "What is IPFS?",
+					"p0": "IPFS, or the InterPlanetary File System, is a protocol and peer-to-peer network that allows you to store and share files on the internet using a distributed file system. It cuts every file into chunks, and then hashes them to distribute them across the network."
+				},
+				"1": {
+					"heading": "How do I use IPFS?",
+					"p0": "To be able to access the IPFS network, you need to have a node running on your computer as well as the",
+					"a0": "browser companion",
+					"p1": "Some browsers, like",
+					"a1": "Brave",
+					"p2": "already have native integration without needing to install anything extra. Obviously, this is only for accessing websites on IPFS, to find out more about how to use IPFS, check out the",
+					"a2": "IPFS website"
+				},
+				"2": {
+					"heading": "But what are the downfalls?",
+					"p0": "Due to it's distributed nature, IPFS is not suitable for storing files that contain personal data or sensitive information. When using gateways, it can take a while for the website or file to be loaded."
+				},
+				"3": {
+					"heading": "How is openPronouns already using IPFS?",
+					"p0": "The website itself is available on IPFS, if you have the browser companion installed then it should have already redirected you and you should be able to see",
+					"p1": "in your address bar instead of",
+					"p2": "You could also go to",
+					"p3": "to see the website but this is using a gateway and could take a while to load."
+				},
+				"4": {
+					"heading": "How could the project use IPFS in the future?",
+					"p0": "Honestly, there's quite a few things that could be done with IPFS. I'm hoping to use it to serve static files for the website so that we don't have to rely on a single CDN. However, this means that we'd have to use a gateway in the beginning, which is not ideal. Looking further into the future, we could run an IPFS node using a service worker if accessed through HTTPS. This means that the more people with the website open, the more redundancy we have. The issue is that we'd need to get consent first from the user especially when taking metered connections into account.",
+					"p1": "Using an IPFS service worker will be fine, if the front-end uses NPM or similar for JS package management. The",
+					"p2": "project already have an example of this working on their website. This package is still in alpha at the moment though so it'll most likely be unstable. Obviously, at the time of writing, we are nowhere near the point where we can use this. I havent even started building a front-end yet, we have a very limited homeserver and that is it."
+				}
+			},
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-04-16"
+			}
+		},
+		"edited": {
+			"text": "This page was last updated on ",
+			"by": "by"
+		}
+	}
+}

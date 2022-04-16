@@ -1,0 +1,109 @@
+{
+	"global": {
+		"wiki": "vikio",
+		"home": "hejmo",
+		"logo": "emblemo de openPronouns",
+		"footer": {
+			"correct": "Io malĝusta? Korektu ĝin",
+			"here": "ĉi tie",
+			"host": "Parte gastigita je"
+		}
+	},
+	"index": {
+		"about": {
+			"title": "Pri",
+			"p": {
+				"0": "openPronouns estas pli simila al protokolo aŭ normo ol io alia. Ĝi fiksas normon por API por servoj por paroli inter si por montri pronomojn por uzanto.",
+				"1": {
+					"0": "La ideo estas havi sistemon kiel eble plej malcentralizitan, similan al la ",
+					"1": "Ĉi tio signifas, ke iu ajn povus krei 'hejmservilon' por gastigi kongruan API. Ĉi tiu API povus esti tiel simpla kiel enhavi unu uzanton, aŭ tiel kompleksa kiel enhavi tutan reton de uzantoj."
+				},
+				"2": "Post kiam tre baza specifo estas farita, ni esperas dividi la projekton en tri partojn:",
+				"3": "Ĉi tiuj partoj devos esti konstruitaj paralele, progreso jam komenciĝis pri hejmservila efektivigo antaŭ ol specifo estis komencita. Estos la respondeco de la hejmservisto konservi uzantajn informojn kaj informojn pri pronomoj aŭ aliaj bazaj informoj. . La kliento estos respondeca por montri la informojn al la uzanto. Ĉi tio povus esti per diversaj metodoj, kiel WebUI, bot, kiu aldonas rolojn al uzanto (en servo kiel Discord aŭ Revolt), aŭ en servo. kiu elektas integri denaske.Fine, ekzistas la Identeca servilo, ĉi tio stokos liston de uzantoj (identigitaj per ilia federacia uzantnomo) kaj haŝan informon de iliaj sociaj informoj por permesi rezerviton en la okazo ke la hejma servilo ne havas federacion agordita. supren ĝuste.",
+				"4": {
+					"0": "Nuntempe, la normo estas en sia infanaĝo kaj estas laboro en progreso. Bonvolu bonvolu aliĝi al la konversacio pri ",
+					"1": "aŭ"
+				}
+			},
+			"li": {
+				"0": "La kliento",
+				"1": "La hejmservilo",
+				"2": "La identeca servilo"
+			}
+		},
+		"projects": {
+			"title": "Rilataj Projektoj",
+			"p": {
+				"0": "La jenaj estas projektoj kiuj povas aŭ ne esti konservitaj de la openPronouns-teamo.",
+				"1": {
+					"0": "Laboras pri projekto kaj volas listigi ĝin? Kontaktu min ĉe ",
+					"1": "aŭ de"
+				}
+			},
+			"a": {
+				"0": "retpoŝto"
+			},
+			"status": "Stato:",
+			"odin": {
+				"title": "Odin",
+				"extra": "WIP, provizore ĉesigita",
+				"desc": "Odino estas la kodnomo por la hejmservilo openPronouns konstruita de Ludoviko en Node.JS",
+				"link": "Projekto GitHub"
+			}
+		}
+	},
+	"wiki": {
+		"index": {
+			"p": {
+				"0": "Baldaŭ ĉi tiu vikio havos enhavon por la specifo, bedaŭrinde ni ankoraŭ ne estas pretaj por tio. Rerigardu baldaŭ!"
+			},
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-04-16"
+			}
+		},
+		"ipfs": {
+			"title": "IPFS",
+			"sections": {
+				"0": {
+					"heading": "Kio estas IPFS?",
+					"p0": "IPFS, aŭ la InterPlanetary File System, estas protokolo kaj samnivela reto, kiu permesas vin stoki kaj kunhavigi dosierojn en la interreto uzante distribuitan dosiersistemon. Ĝi tranĉas ĉiun dosieron en pecojn, kaj poste haŝis. ilin por distribui ilin tra la reto."
+				},
+				"1": {
+					"heading": "Kiel mi uzas IPFS?",
+					"p0": "Por povi aliri la IPFS-reton, vi devas havi nodon funkciantan en via komputilo same kiel la",
+					"a0": "retumila kunulo",
+					"p1": "Kelkaj retumiloj, kiel",
+					"a1": "Brave",
+					"p2": "jam havas denaskan integriĝon sen neceso instali ion kroman. Evidente, ĉi tio estas nur por aliri retejojn ĉe IPFS, por ekscii pli pri kiel uzi IPFS, kontrolu la",
+					"a2": "IPFS-retejo"
+				},
+				"2": {
+					"heading": "Sed kio estas la faloj?",
+					"p0": "Pro ĝia distribua naturo, IPFS ne taŭgas por stoki dosierojn, kiuj enhavas personajn datumojn aŭ sentemajn informojn. Kiam oni uzas enirejojn, la retejo aŭ dosiero povas daŭri iom da tempo por ŝarĝi."
+				},
+				"3": {
+					"heading": "Kiel openPronouns jam uzas IPFS?",
+					"p0": "La retejo mem disponeblas ĉe IPFS, se vi havas la retumilon instalitan, tiam ĝi devus jam redirekti vin kaj vi devus povi vidi",
+					"p1": "en via adresbreto anstataŭe de",
+					"p2": "Vi ankaŭ povus iri al",
+					"p3": "por vidi la retejon sed ĉi tio uzas enirejon kaj povus daŭri iom da tempo por ŝargi."
+				},
+				"4": {
+					"heading": "Kiel la projekto povus uzi IPFS en la estonteco?",
+					"p0": "Vere, estas sufiĉe da aferoj fareblaj kun IPFS. Mi esperas uzi ĝin por servi senmovajn dosierojn por la retejo, por ke ni ne devu fidi je unu sola CDN. Tamen ĉi tiu signifas, ke ni devos uzi enirejon en la komenco, kio ne estas ideala. Rigardante pli en la estontecon, ni povus ruli IPFS-nodon uzante servolaboriston se alirite per HTTPS. Ĉi tio signifas, ke ju pli da homoj kun la retejo malfermas , des pli da redundo ni havas. La problemo estas, ke ni unue devus ricevi konsenton de la uzanto precipe kiam oni konsideras mezuritajn konektojn.",
+					"p1": "Uzi IPFS-servan laboriston estos bone, se la fronto uzas NPM aŭ similan por JS-paka administrado. La",
+					"p2": "projekto jam havas ekzemplon pri tio funkcianta en sia retejo. Ĉi tiu pakaĵo ankoraŭ estas en alfa nuntempe, do plej verŝajne estos malstabila. Evidente, en la momento de la skribado, ni ne estas proksime al la punkto. kie ni povas uzi ĉi tion. Mi eĉ ne komencis konstrui front-end ankoraŭ, ni havas tre limigitan hejman servilon kaj jen ĝi."
+				}
+			},
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-04-16"
+			}
+		},
+		"edited": {
+			"text": "Ĉi tiu paĝo estis laste ĝisdatigita je ",
+			"by": "de"
+		}
+	}
+}

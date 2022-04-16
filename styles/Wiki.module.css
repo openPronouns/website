@@ -1,0 +1,23 @@
+.sNavList {
+    list-style-type: none;
+}
+
+.sNavList a {
+    font-size: 1rem;
+}
+
+.sNavList li {
+    display: inline;
+}
+
+.p {
+    padding: 0 2rem !important;
+}
+
+.h1 {
+    padding: 0 0 !important;
+}
+
+.h2 {
+    padding: 1rem 1rem 0 !important;
+}
