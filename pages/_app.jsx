@@ -1,4 +1,4 @@
-import '..//styles/globals.css'
+import '../styles/globals.css'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 function MyApp({ Component, pageProps }) {
