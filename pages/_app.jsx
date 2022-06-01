@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 import Head from 'next/head';
 

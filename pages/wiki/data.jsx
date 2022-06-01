@@ -4,7 +4,7 @@ import { useLanguageQuery, useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
 import Link from 'next/link';
 import toTitleCase from '../../lib/title_case';
-import styles from '../../styles/Wiki.module.css';
+import styles from '../../styles/Wiki.module.scss';
 
 export default function Data() {
 	const { t } = useTranslation();

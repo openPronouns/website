@@ -1,0 +1,197 @@
+@use 'colours';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+	background-color: colours.$web-background-colour;
+}
+
+nav {
+	margin: 0 auto;
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: colours.$background-colour;
+	width: 98vw;
+	top: 0 !important;
+	left: 0 !important;
+	padding-left: 0 !important;
+	padding: 0.5rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+nav a {
+	color: colours.$accent-colour-light;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding-left: 1rem;
+}
+
+nav a:hover {
+	color: colours.$secondary-colour;
+}
+
+footer {
+	margin: 0 auto;
+	position: static;
+	background-color: colours.$background-colour;
+	width: 98vw;
+	bottom: 0 !important;
+	left: 0 !important;
+	padding-left: 1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+a {
+	color: colours.$accent-colour-light;
+	text-decoration: none;
+}
+
+a:hover {
+	color: colours.$secondary-colour;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.edited {
+	padding-left: 1rem;
+	padding-top: 1rem;
+	color: #555555;
+}
+
+.nav-list ul {
+	float: inline-end;
+}
+
+.nav-list {
+	display: inline;
+}
+
+.container {
+	margin: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+	width: 90vw;
+	border-radius: 1rem;
+	background-color: colours.$background-colour;
+}
+
+.card {
+	border-style: solid;
+	border-width: 0.2rem;
+	border-radius: 0.5rem;
+	border-color: colours.$accent-colour-light;
+	padding-left: 1rem;
+}
+
+.card-data {
+	list-style: none;
+}
+
+.card-data-item {
+	display: inline;
+}
+
+.card-links {
+	list-style: none;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0;
+}
+
+.hero {
+	background-color: colours.$accent-colour-light;
+	text-align: center;
+}
+
+.hero img {
+	width: 65vw;
+	opacity: 50%;
+}
+
+.hero h1 {
+	font-size: 8em;
+	color: white;
+	opacity: 90%;
+}
+
+.nav-img {
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+	margin-left: 1rem;
+	padding-right: 0.5rem;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+	.hero h1 {
+		font-size: 6em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.hero h1 {
+		font-size: 4.5em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero h1 {
+		font-size: 3.5em;
+	}
+
+	li .nav-list {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	.menu {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background-color: colours.$web-background-colour-dark;
+		color: #cccccc;
+	}
+    
+	nav {
+		background-color: colours.$background-colour-dark;
+	}
+
+	nav a {
+		color: colours.$accent-colour-dark;
+	}
+
+	footer {
+		background-color: colours.$background-colour-dark;
+		color: white;
+	}
+
+	.container {
+		background-color: colours.$background-colour-dark;
+	}
+
+	.hero {
+		background-color: colours.$accent-colour-dark;
+		color: colours.$web-background-colour-dark;
+	}
+
+	.hero h1 {
+		color: colours.$web-background-colour-dark;
+	}
+
+	.edited {
+		color: #b9b9b9;
+	}
+}
