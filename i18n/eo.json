@@ -101,6 +101,21 @@
 				"date": "2022-04-16"
 			}
 		},
+		"data": {
+			"navTitle": "datumoj",
+			"title": "administrado de datumoj",
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-06-01"
+			},
+			"h": {
+				"0": "Sekureco de datumoj"
+			},
+			"p": {
+				"0": "La ideo de la projekto estas certigi, ke datumoj estas konservitaj kiel eble plej sekure, samtempe ebligante datuman porteblon kaj federacian aliron. Datumoj kiel retpoŝtaj adresoj kaj telefonnumeroj estu minimume hakitaj. La datumbazo uzata. devus uzi ĉifradon, se ĝi estas teknologie ebla. Por unu-uzantaj okazoj, ĉi tiuj postuloj ne bezonas esti sekvitaj kie la gastiganto de la datumoj estas la uzanto, tamen ili estas ankoraŭ rekomenditaj. Uzantdatenoj ne devus esti kompromitita al",
+				"1": "en ajnaj cirkonstancoj"
+			}
+		},
 		"edited": {
 			"text": "Ĉi tiu paĝo estis laste ĝisdatigita je ",
 			"by": "de"

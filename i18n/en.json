@@ -101,6 +101,21 @@
 				"date": "2022-04-16"
 			}
 		},
+		"data": {
+			"navTitle": "Data",
+			"title": "Data Management",
+			"edited": {
+				"name": "Ludoviko",
+				"date": "2022-06-01"
+			},
+			"h": {
+				"0": "Data security"
+			},
+			"p": {
+				"0": "The idea of the project is to ensure that data is stored as securely as possible while still allowing for data portability and federated access. Data such as email addresses and phone numbers should be hashed at the very least. The database used should employ encryption, if it is technilogically possible. For single-user instances, these requirements do not need to be followed where the host of the data is the user, however they are still recommended. User data should not be committed to",
+				"1": "under any circumstances"
+			}
+		},
 		"edited": {
 			"text": "This page was last updated on ",
 			"by": "by"
